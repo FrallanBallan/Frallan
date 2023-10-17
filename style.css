@@ -1,22 +1,111 @@
 .navBar {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
+  margin: auto;
+  background: #CCD5AE;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+.navBar .navWrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navBar .brand {
+  height: 100%;
+}
+.navBar .brand .brandImage {
+  height: 100%;
+}
+.navBar .navLinkContainer {
+  position: absolute;
+  right: 0;
+  top: 7.6rem;
+  background: #E9EDC9;
+  z-index: -1;
+  opacity: 0;
+  padding: 2rem;
+  transition: transform 200ms ease, opacity 400ms ease;
+}
+.navBar .menuLogo {
+  border: 1px solid black;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+.navBar .menuLogo .fa-bars {
+  font-size: 3rem;
+}
+.navBar .menuLogo:hover .navLinkContainer {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
+@media screen and (min-width: 560px) {
+  .navBar .menuLogo {
+    border: none;
+  }
+  .navBar .fa-bars {
+    display: none;
+  }
+  .navBar .navLinkContainer {
+    opacity: 1;
+    background: transparent;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: inherit;
+  }
+  .navBar .navLinkContainer ul, .navBar .navLinkContainer li {
+    display: flex;
+    flex-direction: row;
+  }
+  .navBar .navList {
+    display: flex;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-p {
+body {
+  height: 500vh;
+}
+
+li {
+  margin: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+p, a, li, ul {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
 }
 
-h1, h2, h3, h4 {
+a {
+  transition: color 200ms ease;
+}
+
+a:hover {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: "Playfair Display", serif;
 }
 
@@ -36,4 +125,13 @@ h3 {
 
 h4 {
   font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */

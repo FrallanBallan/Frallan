@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+p {
+    font-family: $breadText;
+    font-size: $breadSize;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $heading;
+}
+
+h1 {
+    font-size: $h1;
+    color: $primaryColor;
+}
+
+h2 {
+    font-size: $h2;
+    color: $secondaryColor;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h4 {
+    font-size: $h4;
+}

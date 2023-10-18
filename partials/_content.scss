@@ -1,1 +1,48 @@
 
+.mainWrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    // background-color: $accentColor;
+
+    .heroMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-image:url(/images/heroStart.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        gap: 4rem;
+
+        .tagLine {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: white;
+            }
+        }
+        
+        h1 {
+            opacity: 0;
+            position: absolute;
+        }
+
+        .heroLogo {
+            fill: white;
+            
+            height: 30rem;
+        }
+
+
+    }
+    
+
+}

@@ -1,3 +1,40 @@
+.mainWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+}
+.mainWrapper .heroMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/images/heroStart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 4rem;
+}
+.mainWrapper .heroMain .tagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainWrapper .heroMain .tagLine p {
+  color: white;
+}
+.mainWrapper .heroMain h1 {
+  opacity: 0;
+  position: absolute;
+}
+.mainWrapper .heroMain .heroLogo {
+  fill: white;
+  height: 30rem;
+}
+
 .navBar {
   display: flex;
   justify-content: space-between;
@@ -134,4 +171,40 @@ a {
 
 ul, li {
   list-style-type: none;
+}
+
+.footWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #CCD5AE;
+  width: 100%;
+  gap: 0.8rem;
+  padding: 2rem;
+  position: relative;
+}
+.footWrapper a {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.footWrapper .footerLogo {
+  height: 10rem;
+}
+.footWrapper .footerLogo img {
+  height: 100%;
+}
+
+@media screen and (min-width: 560px) {
+  .footWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footWrapper .copyright {
+    position: absolute;
+    bottom: 1rem;
+  }
+  .footWrapper .copyright p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

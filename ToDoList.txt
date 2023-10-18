@@ -1,0 +1,4 @@
+Centrerar Hero bild
+
+Gör alla loggor samma storlek
+

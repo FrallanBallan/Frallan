@@ -1,93 +1,84 @@
-
-
 .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  // min-height: 150px;
+  padding: 2rem;
+  margin: auto;
+
+  background: $primaryColor;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+
+  .navWrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    width: 100%;
-    // min-height: 150px;
-    padding: 2rem;
-    margin: auto;
-    
-    background: $primaryColor;
-    z-index: 2;
-    position: fixed;
-    top: 0;
+  }
+  .brand {
+    height: 100%;
 
-    .navWrapper {
-        max-width: 1440px;
-        width: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
+    .brandImage {
+      height: 100%;
     }
-    .brand {
-        height: 100%;
+  }
 
-        .brandImage {
-            height: 100%;
-        }
+  .navLinkContainer {
+    position: absolute;
+    right: 0;
+    top: 7.6rem;
+    background: $secondaryColor;
+    z-index: -1;
+
+    opacity: 0;
+    padding: 2rem;
+
+    transition: transform 200ms ease, opacity 400ms ease;
+  }
+
+  .menuLogo {
+    border: 1px solid black;
+    padding: 0.25rem;
+    cursor: pointer;
+    .fa-bars {
+      font-size: 3rem;
+    }
+    &:hover .navLinkContainer {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .navBar {
+    .menuLogo {
+      border: none;
+    }
+    .fa-bars {
+      display: none;
     }
 
     .navLinkContainer {
-        position: absolute;
-        right: 0;
-        top: 7.6rem;
-        background: $secondaryColor;
-        z-index: -1;
-        
-        opacity: 0;
-        padding: 2rem;
+      opacity: 1;
+      background: transparent;
+      position: relative;
+      right: 0;
+      top: 0;
+      z-index: inherit;
 
-        transition: transform 200ms ease, opacity 400ms ease;
-        
-    }
-
-       
-    .menuLogo {  
-        border: 1px solid black;  
-        padding: .25rem;
-        cursor: pointer;
-        .fa-bars {
-            font-size: 3rem;
-         }
-        &:hover .navLinkContainer{
-            opacity: 1;
-            transform: translateX(0%);
-         }
-    }
-    
-}
-
-@media screen and (min-width: 560px){
-    .navBar {
-        
-
-        .menuLogo {
-            border: none;
-        }
-        .fa-bars {
-            display: none;
-        }
-
-        .navLinkContainer {
-            opacity: 1;
-            background: transparent;
-            position: relative;
-            right: 0;
-            top: 0;
-            z-index: inherit;
-
-            ul, li {
-                display: flex;
-                flex-direction: row;
-            }
-        }
-       .navList {
+      ul,
+      li {
         display: flex;
-       
-       
-       } 
+        flex-direction: row;
+      }
     }
-} 
-
+    .navList {
+      display: flex;
+    }
+  }
+}

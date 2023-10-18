@@ -15,6 +15,7 @@
   background-image: url(/images/heroStart.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   gap: 4rem;
 }
 .mainWrapper .heroMain .tagLine {
@@ -22,6 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .mainWrapper .heroMain .tagLine p {
   color: white;

@@ -36,6 +36,134 @@
   fill: white;
   height: 30rem;
 }
+.mainWrapper .heroPro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/images/ProductsBakery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 4rem;
+}
+.mainWrapper .heroPro .tagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainWrapper .heroPro .tagLine p {
+  color: white;
+}
+.mainWrapper .heroPro h1 {
+  opacity: 0;
+  position: absolute;
+}
+.mainWrapper .heroPro .heroLogo {
+  fill: white;
+  height: 30rem;
+}
+.mainWrapper .heroAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/images/AboutUsProjekt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 4rem;
+}
+.mainWrapper .heroAbout .tagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainWrapper .heroAbout .tagLine p {
+  color: white;
+}
+.mainWrapper .heroAbout h1 {
+  opacity: 0;
+  position: absolute;
+}
+.mainWrapper .heroAbout .heroLogo {
+  fill: white;
+  height: 30rem;
+}
+.mainWrapper .heroRef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/images/ReferenserProjekt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 4rem;
+}
+.mainWrapper .heroRef .tagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainWrapper .heroRef .tagLine p {
+  color: white;
+}
+.mainWrapper .heroRef h1 {
+  opacity: 0;
+  position: absolute;
+}
+.mainWrapper .heroRef .heroLogo {
+  fill: white;
+  height: 30rem;
+}
+.mainWrapper .heroContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/images/ContactProjekt.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 4rem;
+}
+.mainWrapper .heroContact .tagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainWrapper .heroContact .tagLine p {
+  color: white;
+}
+.mainWrapper .heroContact h1 {
+  opacity: 0;
+  position: absolute;
+}
+.mainWrapper .heroContact .heroLogo {
+  fill: white;
+  height: 30rem;
+}
 
 .navBar {
   display: flex;

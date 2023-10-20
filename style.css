@@ -465,4 +465,53 @@ li {
   .bakeryCategory {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.historyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.historyContainer h2 {
+  color: black;
+  text-decoration: underline;
+}
+.historyContainer .historyAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+.historyContainer .historyAbout:nth-of-type(2) {
+  display: none;
+}
+
+@media screen and (min-width: 560px) {
+  .historyContainer {
+    width: 100%;
+    min-height: 50vh;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .historyContainer .historyAbout {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    text-align: start;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+  }
+  .historyContainer .historyAbout:nth-of-type(2) {
+    display: inline-block;
+  }
+  .historyContainer .historyAbout:nth-of-type(2) img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=style.css.map */

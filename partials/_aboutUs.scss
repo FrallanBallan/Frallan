@@ -1,0 +1,66 @@
+.historyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+
+    h2 {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .historyAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4rem;
+        &:nth-of-type(2) { 
+            display: none;
+        }
+
+    }
+    
+}
+
+@media screen and (min-width:560px) {
+    .historyContainer {
+        width: 100%;
+        min-height: 50vh;
+        flex-direction: row;
+
+        gap: 2rem;
+
+        .historyAbout {
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            text-align: start;
+            height: 100%;
+            width: 100%;
+            gap: 1rem;
+            &:nth-of-type(2) {
+                
+                
+
+                display: inline-block;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+    
+
+}

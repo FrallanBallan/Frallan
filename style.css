@@ -1,3 +1,42 @@
+.mainWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+}
+.mainWrapper .heroMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/images/heroStart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 4rem;
+}
+.mainWrapper .heroMain .tagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainWrapper .heroMain .tagLine p {
+  color: white;
+}
+.mainWrapper .heroMain h1 {
+  opacity: 0;
+  position: absolute;
+}
+.mainWrapper .heroMain .heroLogo {
+  fill: white;
+  height: 30rem;
+}
+
 .navBar {
   display: flex;
   justify-content: space-between;
@@ -6,7 +45,7 @@
   padding: 2rem;
   margin: auto;
   background: #CCD5AE;
-  z-index: 2;
+  z-index: 99;
   position: fixed;
   top: 0;
 }
@@ -61,7 +100,8 @@
     top: 0;
     z-index: inherit;
   }
-  .navBar .navLinkContainer ul, .navBar .navLinkContainer li {
+  .navBar .navLinkContainer ul,
+  .navBar .navLinkContainer li {
     display: flex;
     flex-direction: row;
   }
@@ -80,6 +120,14 @@ body {
   height: 500vh;
 }
 
+.section {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0 1rem 0 1rem;
+}
+
 li {
   margin: 1rem;
 }
@@ -89,7 +137,10 @@ ul {
   flex-direction: column;
 }
 
-p, a, li, ul {
+p,
+a,
+li,
+ul {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
 }
@@ -132,6 +183,101 @@ a {
   color: inherit;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
+}
+
+.footWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #CCD5AE;
+  width: 100%;
+  gap: 0.8rem;
+  padding: 2rem;
+  position: relative;
+  margin-top: 2rem;
+}
+.footWrapper a {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+.footWrapper .footerLogo {
+  height: 10rem;
+}
+.footWrapper .footerLogo img {
+  height: 100%;
+}
+
+@media screen and (min-width: 560px) {
+  .footWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footWrapper .copyright {
+    position: absolute;
+    bottom: 1rem;
+  }
+  .footWrapper .copyright p {
+    font-size: 1rem;
+  }
+}
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  aspect-ratio: 1/1;
+  padding: 0 2rem 3rem 2rem;
+  color: white;
+  overflow: hidden;
+}
+.card .cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  z-index: 10;
+}
+.card .gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 30%, rgb(0, 0, 0) 100%);
+}
+.card .cardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .btn {
+  justify-self: flex-end;
+}
+
+@media screen and (min-width: 784px) {
+  .cardWrapper {
+    flex-direction: row;
+  }
+  .cardWrapper .card {
+    width: 33%;
+  }
 }/*# sourceMappingURL=style.css.map */

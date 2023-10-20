@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mainWrapper {
   display: flex;
   flex-flow: column;
@@ -164,6 +165,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 li {
   margin: 1rem;
 }
@@ -277,6 +282,7 @@ li {
   padding: 0 2rem 3rem 2rem;
   color: white;
   overflow: hidden;
+  z-index: 1;
 }
 .card .cardContent {
   display: flex;
@@ -323,7 +329,7 @@ li {
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
   padding: 1rem;
   color: black;
 }
@@ -419,5 +425,44 @@ li {
     border: black solid;
     width: 66%;
     justify-content: center;
+  }
+}
+.bakeryCategory {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+}
+
+.productCategory {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+  background-color: white;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: black solid 1px;
+  z-index: 1;
+}
+.productCategory p {
+  font-style: italic;
+  color: black;
+  font-weight: 600;
+}
+.productCategory p::before, .productCategory p::after {
+  content: "´";
+}
+
+@media screen and (min-width: 560px) {
+  .bakeryCategory {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 780px) {
+  .bakeryCategory {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */

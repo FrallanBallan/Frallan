@@ -4,17 +4,16 @@
     max-width: 1440px;
     width: 100%;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 1rem;
     color: black;
-
-
 }
 
 .green {
     background: $secondaryColor;
-
 }
+
+
 
 // media querys
 @media screen and (min-width: 560px) {

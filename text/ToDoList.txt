@@ -12,3 +12,5 @@ Lägg till ::after "underline" på h2 i section
 Media querys för tablet?
 
 FIxa radial gradient så det ser bättre ut.
+
+Ändra bilder på produkter samt text/pris

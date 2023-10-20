@@ -1,0 +1,47 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    padding: 2rem;
+    gap: 5rem;
+
+    h2 {
+        color: black;
+    }
+
+    .contentAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4rem;
+    }
+}
+
+@media screen and (min-width:560px) {
+    .aboutContainer {
+        width: 100%;
+        height: 30vh;
+        flex-direction: row;
+        border: none;
+        gap: 2rem;
+        .contentAbout {
+            align-items: start;
+            justify-content: flex-end;
+            text-align: start;
+            height: 100%;
+            width: 33%;
+            gap: 1rem;
+            &:nth-of-type(1) {
+            align-items: center;
+            border: black solid;
+            width: 66%;
+            justify-content: center;
+            }
+        }
+
+    }
+    
+}

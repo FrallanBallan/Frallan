@@ -1,0 +1,15 @@
+        .heroMain {
+            background-image: url(/images/heroStart.jpg);
+        }
+        .heroPro {
+            background-image: url(/images/ContactProjekt.jpg);
+        }
+        .heroAbout {
+            background-image: url(/images/AboutUsProjekt.jpg);
+        }
+        .heroRef {
+            background-image: url(/images/ReferenserProjekt.jpg);
+        }
+        .heroContact {
+            background-image: url(/images/ContactProjekt.jpg);
+        }

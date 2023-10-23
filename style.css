@@ -208,7 +208,7 @@ h1 {
 
 h2 {
   font-size: 3.2rem;
-  color: #E9EDC9;
+  color: black;
 }
 
 h3 {
@@ -492,6 +492,55 @@ li {
   display: none;
 }
 
+.bakersContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  position: relative;
+}
+.bakersContainer .baker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+.bakersContainer .baker:nth-of-type(even) {
+  flex-direction: row-reverse;
+  background: #E9EDC9;
+}
+.bakersContainer .baker .bakerInfo {
+  width: 70%;
+  height: 100%;
+}
+.bakersContainer .baker .bakerInfo:nth-of-type(1) {
+  width: 30%;
+}
+.bakersContainer .baker img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 560px) {
+  .bakersContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bakersContainer .baker {
+    min-height: 30rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #E9EDC9;
+  }
+  .bakersContainer .baker:nth-of-type(even) {
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 780px) {
   .historyContainer {
     width: 100%;
@@ -512,7 +561,7 @@ li {
   .historyContainer .historyAbout:nth-of-type(2) {
     display: flex;
     width: 100%;
-    min-height: 30vh;
+    min-height: 30rem;
     height: 100%;
   }
   .historyContainer .historyAbout:nth-of-type(2) img {
@@ -523,5 +572,12 @@ li {
     left: 0;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .bakersContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+  }
+  .bakersContainer .baker:nth-of-type(even) {
+    background: none;
   }
 }/*# sourceMappingURL=style.css.map */

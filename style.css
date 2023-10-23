@@ -580,4 +580,48 @@ li {
   .bakersContainer .baker:nth-of-type(even) {
     background: none;
   }
+}
+.referenceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 2rem;
+}
+.referenceContainer .refs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #E9EDC9;
+  padding: 3rem;
+  gap: 2rem;
+}
+.referenceContainer .refs:nth-of-type(even) {
+  background: #FAEDCD;
+}
+.referenceContainer .refs .refInfo {
+  height: 50%;
+  width: 50%;
+}
+.referenceContainer .refs .refInfo:nth-of-type(even) {
+  width: 100%;
+}
+.referenceContainer .refs img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 2px 2px 12px violet;
+}
+
+@media screen and (min-width: 560px) {
+  .referenceContainer {
+    text-align: start;
+  }
+  .referenceContainer .refs {
+    flex-direction: row;
+    gap: 5rem;
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

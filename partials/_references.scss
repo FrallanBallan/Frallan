@@ -1,0 +1,55 @@
+.referenceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 2rem;
+
+    
+    
+
+    .refs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $secondaryColor;
+        padding: 3rem;
+        gap: 2rem;
+
+        &:nth-of-type(even) {
+            background: $baseColor;
+        }
+
+        .refInfo {
+            height: 50%;
+            width: 50%;
+
+            &:nth-of-type(even) {
+                width: 100%;
+            }
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 2px 2px 12px violet;
+        }
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .referenceContainer {
+        text-align: start;
+        
+        .refs {
+            flex-direction: row;
+            gap: 5rem;
+            padding: 1rem;
+            
+        }
+
+    }
+}

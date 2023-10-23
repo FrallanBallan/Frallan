@@ -25,6 +25,11 @@
     align-items: flex-start;
     justify-content: flex-end;
     z-index: 10;
+
+    p {
+      font-style: $italianStyle;
+      font-weight: $italianWeight;
+    }
   }
 
   .gradient {

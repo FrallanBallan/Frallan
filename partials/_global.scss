@@ -13,6 +13,12 @@ body {
   background-color: whitesmoke;
 }
 
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 li {
   margin: 1rem;
 }
@@ -53,6 +59,17 @@ h1 {
 h2 {
   font-size: $h2;
   color: black;
+}
+
+.topProd {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.tagLine {
+  h2 {
+    color: $primaryColor;
+  }
 }
 
 h3 {

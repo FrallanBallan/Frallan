@@ -2,15 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 100%;
+  width: 95%;
   // min-height: 150px;
-  padding: 2rem;
+  padding: 1rem;
   margin: auto;
-
+  border-radius: 0.8rem;
   background: $primaryColor;
   z-index: 99;
   position: fixed;
-  top: 0;
+  top: 1rem;
+
+  box-shadow: 0 2px 6px rgb(91, 91, 91);
 
   .navWrapper {
     max-width: 1440px;
@@ -30,7 +32,8 @@
   .navLinkContainer {
     position: absolute;
     right: 0;
-    top: 7.6rem;
+    top: 5.67rem;
+    border-radius: 0.8rem;
     background: $secondaryColor;
     z-index: -1;
 

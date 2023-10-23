@@ -1,0 +1,48 @@
+.btn {
+  padding: 1rem 2rem;
+  //   min-width: 20rem;
+  font-size: 1.6rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.wide {
+  width: 100%;
+}
+
+.short {
+  width: 50%;
+}
+
+.primary {
+  background: $primaryColor;
+}
+
+.secondary {
+  background: $secondaryColor;
+}
+
+.accent {
+  background: $accentColor2;
+}
+
+.outline {
+  border: 1px solid $accentColor2;
+  background: transparent;
+  color: white;
+}
+
+.heroBtns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+
+  a {
+    width: 40%;
+  }
+}

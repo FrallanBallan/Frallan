@@ -1,110 +1,123 @@
-
 .mainWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  // background-color: $accentColor;
+  //Startsida
+  .heroMain {
     display: flex;
-    flex-flow: column;
     justify-content: center;
-    width: 100%;
-    // background-color: $accentColor;
-//Startsida
-    .heroMain {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;    
-        gap: 4rem;
-        
-        
-        .tagLine {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            line-height: 1.6;
-            padding: 0 .5rem 0 .5rem;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 4rem;
+    min-height: 100vh;
 
-            
-            
-            p {
-                color: white;
-                // font-weight: 400;
-                font-size: $breadSize*1.3;    
-            }
+    .tagLine {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 1.6;
+      padding: 0 0.5rem 0 0.5rem;
 
-            
-
-        }
-        
-        h1 {
-            opacity: 0;
-            position: absolute;
-        }
-
-        .heroLogo {
-            fill: white;
-            
-            height: 20rem;
-        }
+      p {
+        color: white;
+        // font-weight: 400;
+        font-size: $breadSize * 1.3;
+      }
     }
-    
+
+    h1 {
+      opacity: 0;
+      position: absolute;
+    }
+
+    .heroLogo {
+      fill: white;
+
+      height: 20rem;
+    }
+  }
 }
-
-
-
-
-
-
 
 // hero images
 .startHero {
-    background-image:radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(/images/heroStart.jpg);
-    min-height: 100vh;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(/images/heroStart.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .heroPro {
-    background-image:radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%), url(/images/ProductsBakery.jpg);
-    min-height: 100vh;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(/images/ProductsBakery.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .heroAbout {
-    background-image:radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(/images/AboutUsProjekt.jpg);
-    min-height: 100vh;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(/images/AboutUsProjekt.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .heroRef {
-    background-image:radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(/images/ReferenserProjekt.jpg);
-    min-height: 100vh;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(/images/ReferenserProjekt.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .heroContact {
-    background-image:radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(/images/ContactProjekt.jpg);
-    min-height: 100vh;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(/images/ContactProjekt.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
-
 
 // Media query for herosection
 @media screen and (min-width: 560px) {
-    .tagLine {
-        max-width: 40%;
-        padding: 0;
+  .tagLine {
+    max-width: 75%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .mainWrapper {
+    .heroMain {
+      min-height: 120vh;
     }
+  }
 }

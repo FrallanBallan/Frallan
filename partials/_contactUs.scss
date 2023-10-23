@@ -9,6 +9,7 @@
     background: $secondaryColor;
     background-size: cover;
     padding: 1rem;
+    overflow-wrap: break-word;
   }
 
   .formContact {
@@ -16,7 +17,9 @@
       width: 50%;
       padding: 0.5rem;
       margin-top: 0.5rem;
+      font-size: 2rem;
     }
+    
 
     #contactText {
       resize: none;
@@ -24,6 +27,7 @@
       min-height: 10rem;
       padding: 0.5rem;
       margin-top: 1rem;
+      font-size: 1rem;
     }
 
     .radioGroup {
@@ -33,6 +37,8 @@
       justify-content: start;
       gap: 2rem;
       margin-top: 1rem;
+      font-size: 2.4rem;
+      font-weight: 600;
 
       div {
         display: flex;
@@ -52,4 +58,22 @@
   h3 {
     font-size: 1.8rem;
   }
+}
+
+@media screen and (min-width: 780px) {
+  .contactInfo {
+    flex-direction: row;
+    width: 100%;
+
+    .fastContact {
+      width: 30%;
+    }
+    .formContact {
+      width: 70%;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  
 }

@@ -636,11 +636,13 @@ li {
   background: #E9EDC9;
   background-size: cover;
   padding: 1rem;
+  overflow-wrap: break-word;
 }
 .contactInfo .formContact input {
   width: 50%;
   padding: 0.5rem;
   margin-top: 0.5rem;
+  font-size: 2rem;
 }
 .contactInfo .formContact #contactText {
   resize: none;
@@ -648,6 +650,7 @@ li {
   min-height: 10rem;
   padding: 0.5rem;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 .contactInfo .formContact .radioGroup {
   display: flex;
@@ -656,6 +659,8 @@ li {
   justify-content: start;
   gap: 2rem;
   margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 .contactInfo .formContact .radioGroup div {
   display: flex;
@@ -670,4 +675,20 @@ li {
 .contactInfo h2,
 .contactInfo h3 {
   font-size: 1.8rem;
+}
+
+@media screen and (min-width: 780px) {
+  .contactInfo {
+    flex-direction: row;
+    width: 100%;
+  }
+  .contactInfo .fastContact {
+    width: 30%;
+  }
+  .contactInfo .formContact {
+    width: 70%;
+  }
+  .contactInfo .formContact input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

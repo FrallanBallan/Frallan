@@ -14,3 +14,7 @@ Media querys för tablet?
 FIxa radial gradient så det ser bättre ut.
 
 Ändra bilder på produkter samt text/pris
+
+Färger På headings
+
+Variable för italic text

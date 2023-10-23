@@ -624,4 +624,50 @@ li {
     gap: 5rem;
     padding: 1rem;
   }
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+.contactInfo .fastContact {
+  width: 100%;
+  background: #E9EDC9;
+  background-size: cover;
+  padding: 1rem;
+}
+.contactInfo .formContact input {
+  width: 50%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contactInfo .formContact #contactText {
+  resize: none;
+  width: 100%;
+  min-height: 10rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.contactInfo .formContact .radioGroup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: start;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.contactInfo .formContact .radioGroup div {
+  display: flex;
+  align-items: center;
+}
+.contactInfo .formContact .radioGroup input[type=radio] {
+  width: auto;
+  margin: 0;
+  margin-right: 0.5rem;
+  padding: 0;
+}
+.contactInfo h2,
+.contactInfo h3 {
+  font-size: 1.8rem;
 }/*# sourceMappingURL=style.css.map */

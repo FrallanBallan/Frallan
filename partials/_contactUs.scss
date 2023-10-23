@@ -1,0 +1,55 @@
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+
+  .fastContact {
+    width: 100%;
+    background: $secondaryColor;
+    background-size: cover;
+    padding: 1rem;
+  }
+
+  .formContact {
+    input {
+      width: 50%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    #contactText {
+      resize: none;
+      width: 100%;
+      min-height: 10rem;
+      padding: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .radioGroup {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: start;
+      gap: 2rem;
+      margin-top: 1rem;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="radio"] {
+        width: auto;
+        margin: 0;
+        margin-right: 0.5rem;
+        padding: 0;
+      }
+    }
+  }
+
+  h2,
+  h3 {
+    font-size: 1.8rem;
+  }
+}

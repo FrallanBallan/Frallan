@@ -87,11 +87,22 @@
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 50%
     ),
-    url(/images/ReferenserProjekt.jpg);
+    url(https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  .tagLine {
+    p {
+      margin-bottom: 1rem;
+      &::first-letter {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+      }
+    }
+  }
 }
 .heroContact {
   background-image: radial-gradient(
@@ -117,7 +128,7 @@
 @media screen and (min-width: 560px) {
   .mainWrapper {
     .heroMain {
-      min-height: 120vh;
+      min-height: 110vh;
     }
   }
 }

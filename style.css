@@ -61,11 +61,19 @@
 }
 
 .heroRef {
-  background-image: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%), url(/images/ReferenserProjekt.jpg);
+  background-image: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%), url(https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.heroRef .tagLine p {
+  margin-bottom: 1rem;
+}
+.heroRef .tagLine p::first-letter {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
 .heroContact {
@@ -84,7 +92,7 @@
 }
 @media screen and (min-width: 560px) {
   .mainWrapper .heroMain {
-    min-height: 120vh;
+    min-height: 110vh;
   }
 }
 .navBar {
@@ -100,6 +108,9 @@
   position: fixed;
   top: 1rem;
   box-shadow: 0 2px 6px rgb(91, 91, 91);
+}
+.navBar a:hover {
+  color: white;
 }
 .navBar .navWrapper {
   max-width: 1440px;
@@ -198,10 +209,6 @@ ul {
 
 a {
   transition: color 200ms ease;
-}
-
-a:hover {
-  color: white;
 }
 
 h1,
@@ -536,11 +543,19 @@ li {
   background: #e9edc9;
 }
 .bakersContainer .baker .bakerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 70%;
   height: 100%;
 }
 .bakersContainer .baker .bakerInfo:nth-of-type(1) {
   width: 30%;
+}
+.bakersContainer .baker .bakerInfo .bakerMail {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  justify-self: flex-end;
 }
 .bakersContainer .baker img {
   height: 100%;
@@ -583,14 +598,13 @@ li {
   }
   .historyContainer .historyAbout:nth-of-type(2) {
     display: flex;
+    align-items: center;
     width: 100%;
     min-height: 30rem;
     height: 100%;
   }
   .historyContainer .historyAbout:nth-of-type(2) img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70%;
     top: 0;
     left: 0;
     -o-object-fit: cover;
@@ -640,6 +654,22 @@ li {
   gap: 1rem;
   align-items: center;
 }
+.referenceContainer .refs .refInfo .baguetteRating {
+  display: flex;
+  gap: 1rem;
+  height: 5rem;
+  position: relative;
+}
+.referenceContainer .refs .refInfo .baguetteRating img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: none;
+}
+.referenceContainer .refs .refInfo .baguetteRating .blackedOut {
+  filter: brightness(0);
+}
 .referenceContainer .refs .refInfo:nth-of-type(even) {
   width: auto;
 }
@@ -686,6 +716,9 @@ li {
   padding: 0.5rem;
   margin-top: 0.5rem;
   font-size: 2rem;
+}
+.contactInfo .formContact input textarea {
+  font-size: 1.8rem;
 }
 .contactInfo .formContact #contactText {
   resize: none;
@@ -738,11 +771,14 @@ li {
 .btn {
   padding: 1rem 2rem;
   font-size: 1.6rem;
+  font-weight: 600;
   width: 100%;
   outline: none;
   border: none;
   border-radius: 0.5rem;
   text-align: center;
+  color: black;
+  cursor: pointer;
 }
 
 .wide {
@@ -755,6 +791,12 @@ li {
 
 .primary {
   background: #ccd5ae;
+  box-shadow: none;
+  transition: box-shadow 200ms ease;
+}
+.primary:hover {
+  box-shadow: inset 2px 2px 6px black;
+  color: black;
 }
 
 .secondary {
@@ -763,12 +805,23 @@ li {
 
 .accent {
   background: #ffd703;
+  box-shadow: none;
+  transition: background 200ms ease, box-shadow 200ms;
+}
+.accent:hover {
+  background: #ccd5ae;
+  box-shadow: inset 2px 2px 6px black;
 }
 
 .outline {
   border: 1px solid #ffd703;
   background: transparent;
   color: white;
+  transition: background 200ms ease, color 250ms ease;
+}
+.outline:hover {
+  background: #ffd703;
+  color: black;
 }
 
 .heroBtns {

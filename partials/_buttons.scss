@@ -2,11 +2,14 @@
   padding: 1rem 2rem;
   //   min-width: 20rem;
   font-size: 1.6rem;
+  font-weight: 600;
   width: 100%;
   outline: none;
   border: none;
   border-radius: 0.5rem;
   text-align: center;
+  color: black;
+  cursor:  pointer;
 }
 
 .wide {
@@ -19,6 +22,14 @@
 
 .primary {
   background: $primaryColor;
+  box-shadow: none;
+
+  transition: box-shadow 200ms ease;
+
+  &:hover {
+    box-shadow: inset 2px 2px 6px black;
+    color: black;
+  }
 }
 
 .secondary {
@@ -27,12 +38,24 @@
 
 .accent {
   background: $accentColor2;
+  box-shadow: none;
+  transition: background 200ms ease, box-shadow 200ms;
+  &:hover {
+    background: $primaryColor;
+    box-shadow: inset 2px 2px 6px black;
+  }
 }
 
 .outline {
   border: 1px solid $accentColor2;
   background: transparent;
   color: white;
+
+  transition: background 200ms ease, color 250ms ease;
+  &:hover {
+    background: $accentColor2;
+    color: black;
+  }
 }
 
 .heroBtns {
